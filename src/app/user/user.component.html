@@ -1,0 +1,22 @@
+<app-card>
+  <!-- aqui class.active se le agrega la clase active del css en el boton diciendole que sea true or false segun selected-->
+  <button [class.active]="selected" (click)="clickForTask()">
+    <img [src]="imagePath" alt="" />
+    <span>Name: {{ user.name }}</span>
+  </button>
+
+  <!-- @for (item of users; track $index) {
+  <button> -->
+    <!-- <img [src]="imagePath" alt="">-->
+    <!-- <img [src]="'assets/users/' + item.avatar" alt="" /> -->
+    <!--"esto selecciona un nombre y foto al azar"-->
+    <!-- para poner una imagen o archivo o atributo  el src ponerlo entre []-->
+    <!--<span>Name: {{selectedUser.name}}</span> "esto selecciona un nombre y foto al azar"-->
+    <!-- <span>Name: {{ item.name }}</span>
+  </button>
+  } -->
+  <!-- <button (click)="ClickUser()">
+    <img [src]="imagePath" [alt]="name" />
+    <span>Random Name click: {{ name }}</span>
+  </button> -->
+</app-card>
